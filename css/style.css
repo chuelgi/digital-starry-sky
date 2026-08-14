@@ -1,0 +1,382 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: #fffaf7;
+      color: #29252a;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .logo-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+
+      background: #f3b6c8;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 16px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #514b52;
+      font-size: .95rem;
+    }
+
+    nav a:hover {
+      color: #c96d8d;
+    }
+
+    .nav-button {
+      background: #29252a;
+      color: white;
+      padding: 11px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: .9rem;
+    }
+
+    /* HERO */
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 30px 110px;
+
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .eyebrow {
+      color: #c96d8d;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3rem, 6vw, 5rem);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    h1 span {
+      color: #c96d8d;
+    }
+
+    .hero-text {
+      color: #6d676d;
+      max-width: 500px;
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .primary-button {
+      background: #29252a;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .secondary-button {
+      color: #29252a;
+      text-decoration: none;
+      padding: 14px 18px;
+    }
+
+    /* HERO CARD */
+
+    .hero-card {
+      background: #f7e7ed;
+      border-radius: 35px;
+      padding: 35px;
+      min-height: 350px;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sparkle {
+      position: absolute;
+      font-size: 28px;
+    }
+
+    .sparkle.one {
+      top: 25px;
+      right: 35px;
+    }
+
+    .sparkle.two {
+      bottom: 35px;
+      left: 30px;
+    }
+
+    .website-preview {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+
+      position: absolute;
+      left: 35px;
+      right: 35px;
+      top: 65px;
+
+      box-shadow: 0 15px 35px rgba(50, 35, 45, .12);
+    }
+
+    .preview-bar {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      background: #ded6da;
+      border-radius: 50%;
+    }
+
+    .preview-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .preview-block {
+      height: 80px;
+      background: #f5edf0;
+      border-radius: 12px;
+    }
+
+    .preview-block.large {
+      height: 180px;
+      grid-column: span 2;
+      background: #eee0e7;
+    }
+
+    /* SERVICES */
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 30px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2.7rem;
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      color: #777077;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service {
+      background: white;
+      border: 1px solid #eee5e8;
+      border-radius: 22px;
+      padding: 30px;
+    }
+
+    .service-icon {
+      width: 45px;
+      height: 45px;
+      background: #f7e7ed;
+      border-radius: 14px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 20px;
+    }
+
+    .service h3 {
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      color: #777077;
+      font-size: .95rem;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio {
+      background: #fff;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project {
+      background: #f7f1ee;
+      border-radius: 25px;
+      padding: 15px;
+    }
+
+    .project-image {
+      height: 280px;
+      border-radius: 18px;
+      background: #eadfe2;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #756b70;
+    }
+
+    .project-info {
+      padding: 18px 5px 5px;
+    }
+
+    .project-info h3 {
+      margin-bottom: 4px;
+    }
+
+    .project-info p {
+      color: #777077;
+      font-size: .9rem;
+    }
+
+    /* CTA */
+
+    .cta {
+      max-width: 1040px;
+      margin: 80px auto;
+      padding: 70px 30px;
+
+      background: #29252a;
+      color: white;
+
+      border-radius: 30px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2.7rem;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #d7d0d4;
+      margin-bottom: 25px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #f3b6c8;
+      color: #29252a;
+
+      padding: 14px 24px;
+      border-radius: 15px;
+
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    /* FOOTER */
+
+    footer {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px;
+
+      display: flex;
+      justify-content: space-between;
+
+      color: #777077;
+      font-size: .85rem;
+    }
+
+    @media (max-width: 750px) {
+
+      nav ul {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        min-height: 300px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
