@@ -199,7 +199,7 @@
 
     <!-- CTA -->
 
-    <div class="cta" id="contact">
+    <div class="contact-area" id="contact">
 
       <h2>Ready for a better website?</h2>
 
@@ -208,9 +208,20 @@
         let's make something great.
       </p>
 
-      <a href="mailto:youremail@example.com">
-        Get in touch
-      </a>
+       <form action="https://formspree.io/f/xjybazyg" method="POST" class = "contact-form">
+            <input type="text" placeholder="Full Name" name="customer-name" required>
+
+            <input type="email" placeholder="Email Address" name="customer-email" required>
+
+            <textarea rows="4" placeholder="What do you need help with?" name="request" required></textarea>
+
+            <button type="submit" class="primary-button" style="width: 100%; border: none; cursor: pointer;">
+
+                Send Inquiry
+
+            </button>
+        </form>
+
 
     </div>
 
